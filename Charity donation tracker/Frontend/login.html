@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="form-box">
+    <h2>Login</h2>
+    <form id="loginForm" method="post">
+      <div class="input-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" placeholder="Enter username" required>
+      </div>
+
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter password" required>
+      </div>
+
+      <div class="input-group">
+        <label for="role">Choose Role</label>
+        <select id="role" required>
+          <option value="">-- Select Role --</option>
+          <option value="donor">Donor</option>
+          <option value="ngo">NGO</option>
+          <option value="admin">Admin</option>
+        </select>
+      </div>
+
+      <button type="submit" class="btn">Login</button>
+      <p id="error" class="error"></p>
+    </form>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
